@@ -14,11 +14,18 @@
     <div class="head">
       <h1>Poivre Icon</h1>
     </div>
-    
+   
+
     <div class="group">
 
 
-      <div class="square"></div>
+      <div class="square">
+        <div class="logo">
+            <canvas id="canvas">
+              </canvas>
+        </div>
+
+      </div>
 
       <div class="outil">
         <h2>Outils</h2>
@@ -29,20 +36,26 @@
             </div>
             <div class="item">
                 <h3>Background Image :</h3>
-                <input type="color" id="head" name="head">
+                <div class="container">
+                    <input type="color" id="primary_color" class="field-radio">
+                    <span class="container" id="color_val"></span>
+                </div>
             </div>
             <div class="item">
               <h3>Border :</h3>
-              <input type="radio" name="radio" id="radio"/> <label for="radio">
-                  Arrondi</label>
-              <input type="radio" name="radio" id="radio"/> <label for="radio">Carrer</label>
+              <div class="border-choice">
+                  <input type="radio" name="radio" id="radio"/> <label for="radio">
+                      Arrondi</label>
+                  <input type="radio" name="radio" id="radio"/> <label for="radio">Carrer</label>
+              </div>
+            
             </div>
             <div class="item">
                 <h3>Text : </h3>
                 <input type="text" id="name" name="name"
                  size="10">
             </div>
-            <div>
+            <div class="send-button">
               <a href="#" class="myButton">Save</a>
             </div>
         </div>

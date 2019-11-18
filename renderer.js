@@ -5,3 +5,9 @@
 // selectively enable features needed in the rendering
 // process.
 
+var colorButton = document.getElementById("primary_color");
+    var colorDiv = document.getElementById("color_val");
+    colorButton.onchange = function() {
+        colorDiv.innerHTML = colorButton.value;
+        colorDiv.style.color = colorButton.value;
+    }
