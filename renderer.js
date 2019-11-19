@@ -6,8 +6,12 @@
 // process.
 
 var colorButton = document.getElementById("primary_color");
-    var colorDiv = document.getElementById("color_val");
+var colorDiv = document.getElementById("color_val");
+var colorDiv = document.getElementById("canvas");
+
+
     colorButton.onchange = function() {
         colorDiv.innerHTML = colorButton.value;
         colorDiv.style.color = colorButton.value;
+        canvas.style.backgroundColor = colorButton.value;
     }
