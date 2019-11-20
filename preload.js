@@ -121,8 +121,8 @@ document.getElementById("horizontal").addEventListener('input', evt => {
     // get horizontal
     var iX = (1024 - zw)/2
 
-    iY = iY + vertical
-    iX = iX + horizontal
+    iY = iY * vertical
+    iX = iX * horizontal
 
     ctx.drawImage(image, iX, iY, zw, zh);
     
